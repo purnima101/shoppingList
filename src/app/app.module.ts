@@ -11,7 +11,13 @@ import { RecepieDetailsComponent } from './components/recepies/recepie-details/r
 import { RecepieItemComponent } from './components/recepies/recepie-list/recepie-item/recepie-item.component';
 import { ShoppingListComponent } from './components/shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './components/shopping-list/shopping-edit/shopping-edit.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatToolbarModule} from '@angular/material/toolbar'; 
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatCardModule} from '@angular/material/card';
+import {MatBadgeModule} from '@angular/material/badge'; 
 
 
 @NgModule({
@@ -29,7 +35,15 @@ import { ShoppingEditComponent } from './components/shopping-list/shopping-edit/
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule,
+    MatMenuModule,
+    MatCardModule,
+    MatBadgeModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

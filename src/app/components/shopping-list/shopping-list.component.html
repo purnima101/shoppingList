@@ -1,10 +1,17 @@
 
 <hr>
 <p>shopping-list works!</p>
+<!-- {{ingrediants[0].name}} -->
+
 <div class="row">
     <div class="col-xs-10">
         <app-shopping-edit></app-shopping-edit>
     </div>
     <hr>
-    <p>The list</p>
+    <ul>
+        <a href="#" *ngFor="let item of ingrediants">
+           <li> {{item.name}}----{{item.amount}} </li>
+        </a> 
+        
+    </ul>
 </div>

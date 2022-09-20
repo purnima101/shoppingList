@@ -1,22 +1,16 @@
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a href="#" class="navbar-brand">Easy Food</a>
-        </div>
-
-        <div class="nav navbar-nav navbar-right"><a href="#">Recipes</a></div>
-        <div class="nav navbar-nav navbar-right"><a href="#">Shopping List</a></div>
-
-        <div class="dropdown nav navbar-nav">
-            <button class="dropbtn">Manage</button>
-            <div class="dropdown-content">
-              <a href="#">Save Data</a>
-              <a href="#">Fetch Data</a>
-           
-            </div>
-        </div> 
+<mat-toolbar color="primary">
+   
+    <span>Shopping List</span>
+    <span class="example-spacer"></span>
+    <div class="example-button-row">
         
-           
-        
+        <button mat-raised-button color="primary">Recipe</button>
+        <button mat-raised-button color="primary">Shopping List</button>
+        <button mat-button [matMenuTriggerFor]="belowMenu">Manage</button>
+        <mat-menu #belowMenu="matMenu" yPosition="below">
+        <button mat-menu-item>Save data</button>
+        <button mat-menu-item>Fetch Data</button>
+        </mat-menu>
     </div>
-    </nav>
+ 
+  </mat-toolbar>
