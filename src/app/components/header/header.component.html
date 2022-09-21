@@ -4,8 +4,8 @@
     <span class="example-spacer"></span>
     <div class="example-button-row">
         
-        <button mat-raised-button color="primary">Recipe</button>
-        <button mat-raised-button color="primary">Shopping List</button>
+        <button mat-raised-button color="primary" (click)="selectOne('recipe')">Recipe</button>
+        <button mat-raised-button color="primary" (click)="selectOne('shopping')">Shopping List</button>
         <button mat-button [matMenuTriggerFor]="belowMenu">Manage</button>
         <mat-menu #belowMenu="matMenu" yPosition="below">
         <button mat-menu-item>Save data</button>

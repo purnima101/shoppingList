@@ -1,5 +1,7 @@
-<app-header></app-header>
+<app-header (eventEmit)="outPut($event)"></app-header>
 
-<app-recepies></app-recepies>
+<app-recepies *ngIf="feature === 'recipe'"></app-recepies>
 
-<app-shopping-list></app-shopping-list>
+<app-shopping-list *ngIf="feature === 'shopping'"></app-shopping-list>
+
+
